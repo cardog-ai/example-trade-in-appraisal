@@ -1,0 +1,474 @@
+{
+  "vin": "2HGFC2F51MH015612",
+  "recordedAt": "2026-10-16T17:40:00.000Z",
+  "sdk": "@cardog/api@2.2.0",
+  "calls": {
+    "decode": {
+      "ok": true,
+      "ms": 212,
+      "provenance": "recorded through @cardog/api 2.2.0 on 2026-10-16",
+      "response": {
+        "vin": "2HGFC2F51MH015612",
+        "valid": true,
+        "year": 2021,
+        "doors": 4,
+        "trim": "LX",
+        "numberOfWheels": null,
+        "numberOfAxles": null,
+        "shippingWeight": null,
+        "grossWeight": null,
+        "make": "Honda",
+        "model": "Civic",
+        "refs": {
+          "make": "make:honda",
+          "model": "model:honda/civic",
+          "modelYear": "model-year:honda/civic/2021",
+          "bodyStyle": "body-style:sedan-saloon",
+          "fuelType": "fuel-type:gasoline",
+          "driveType": null,
+          "transmission": "transmission:continuously-variable-transmission-cvt",
+          "electrificationLevel": null,
+          "vehicleType": "vehicle-type:passenger-car",
+          "gvwr": "gvwr:class-1b-3-001-4-000-lb-1-360-1-814-kg",
+          "country": null,
+          "bodyCab": null,
+          "bedType": null,
+          "series": null,
+          "fuelTypeSecondary": null,
+          "trailerBodyType": null,
+          "trailerType": null
+        },
+        "nano": "nano:2HGFC2F5MH",
+        "squish": "squish:2HGFC2F5M",
+        "reasons": null,
+        "corgiBuild": "8899a1a2c559132e53456d8c388dfcaa7d505bee989ac4d780eb32a8e9fad48f",
+        "attributes": {
+          "gvwr": {
+            "to": "gvwr:class-1b-3-001-4-000-lb-1-360-1-814-kg",
+            "from": "gvwr:class-1b-3-001-4-000-lb-1-360-1-814-kg",
+            "toName": "Class 1B: 3,001 - 4,000 lb (1,360 - 1,814 kg)",
+            "fromName": "Class 1B: 3,001 - 4,000 lb (1,360 - 1,814 kg)"
+          },
+          "trim": {
+            "value": "LX"
+          },
+          "doors": {
+            "value": 4
+          },
+          "model": {
+            "name": "Civic",
+            "value": "model:honda/civic"
+          },
+          "camType": {
+            "value": "DOHC"
+          },
+          "bodyStyle": {
+            "name": "Sedan/Saloon",
+            "value": "body-style:sedan-saloon"
+          },
+          "cylinders": {
+            "value": 4
+          },
+          "plantCity": {
+            "value": "ALLISTON"
+          },
+          "fuelSystem": {
+            "value": "Sequential Fuel Injection (SFI)"
+          },
+          "plantState": {
+            "value": "ONTARIO"
+          },
+          "coolingType": {
+            "name": "Water",
+            "value": "cooling-type:water"
+          },
+          "engineModel": {
+            "value": "K20C2"
+          },
+          "sideAirbags": {
+            "value": "standard",
+            "derived": true
+          },
+          "frontAirbags": {
+            "value": "standard",
+            "derived": true
+          },
+          "manufacturer": {
+            "value": "HONDA OF CANADA MFG., A DIVISION OF HONDA CANADA INC."
+          },
+          "plantCountry": {
+            "name": "CANADA",
+            "value": "country:canada"
+          },
+          "seatBeltType": {
+            "value": "Manual"
+          },
+          "transmission": {
+            "name": "Continuously Variable Transmission (CVT)",
+            "value": "transmission:continuously-variable-transmission-cvt"
+          },
+          "displacementL": {
+            "unit": "L",
+            "value": 2
+          },
+          "curtainAirbags": {
+            "value": "standard",
+            "derived": true
+          },
+          "displacementCC": {
+            "unit": "CC",
+            "value": 1996
+          },
+          "horsepowerFrom": {
+            "from": 158,
+            "unit": "HP"
+          },
+          "fuelTypePrimary": {
+            "name": "Gasoline",
+            "value": "fuel-type:gasoline"
+          },
+          "destinationMarket": {
+            "value": "Canada"
+          },
+          "engineManufacturer": {
+            "value": "Honda"
+          },
+          "engineStrokeCycles": {
+            "value": 4
+          },
+          "engineConfiguration": {
+            "name": "In-Line",
+            "value": "engine-configuration:in-line"
+          },
+          "sideAirbagLocations": {
+            "value": "1st Row (Driver and Passenger)"
+          },
+          "frontAirbagLocations": {
+            "value": "1st Row (Driver and Passenger)"
+          },
+          "curtainAirbagLocations": {
+            "value": "1st and 2nd Rows"
+          }
+        },
+        "links": {
+          "instrument": "/v2/vin/2HGFC2F51MH015612/instrument",
+          "recalls": "/v2/vin/2HGFC2F51MH015612/recalls",
+          "listings": "/v2/vin/2HGFC2F51MH015612/listings",
+          "specsBuild": "/v2/specs/nano%3A2HGFC2F5MH",
+          "safetyBuild": "/v2/safety/nano%3A2HGFC2F5MH",
+          "specs": "/v2/specs/model-year%3Ahonda%2Fcivic%2F2021",
+          "quote": "/v2/quotes/model-year%3Ahonda%2Fcivic%2F2021",
+          "safety": "/v2/safety/model-year%3Ahonda%2Fcivic%2F2021"
+        }
+      }
+    },
+    "quote": {
+      "ok": true,
+      "ms": 141,
+      "provenance": "read through the Cardog MCP server (same API) on 2026-10-16",
+      "response": {
+        "ref": "model-year:honda/civic/2021",
+        "grain": "mmy",
+        "liveCount": 57,
+        "bestPrice": 14999,
+        "priceP25": 18995,
+        "priceMedian": 20795,
+        "priceP75": 21989,
+        "avgDomDays": 75,
+        "cuts30d": 8,
+        "avgCutPct30d": 4.54,
+        "sightings30d": 26833,
+        "asOf": "2026-10-16T01:01:04.149Z",
+        "links": {
+          "instrument": "/v2/instruments/model-year%3Ahonda%2Fcivic%2F2021",
+          "history": "/v2/tape/history/model-year%3Ahonda%2Fcivic%2F2021"
+        }
+      }
+    },
+    "comps": {
+      "ok": true,
+      "ms": 356,
+      "provenance": "read through the Cardog MCP server (same API) on 2026-10-16; the MCP search takes no location, so these are Canada-wide, and the trade-in's own listing is left out",
+      "response": {
+        "listings": [
+          {
+            "id": "9d51b948-f49c-4439-9623-67733809c200",
+            "vin": "2HGFC2F85MH014585",
+            "price": 25590,
+            "currency": "CAD",
+            "odometer": 40954,
+            "year": 2021,
+            "make": "Honda",
+            "model": "Civic",
+            "trim": "Sport",
+            "makeRef": "make:honda",
+            "modelRef": "model:honda/civic",
+            "nano": "2HGFC2F8*MH",
+            "media": []
+          },
+          {
+            "id": "c50940fb-46c9-4e45-b01e-d82cd7a12e40",
+            "vin": "2HGFC2F76MH006342",
+            "price": 24590,
+            "currency": "CAD",
+            "odometer": 40306,
+            "year": 2021,
+            "make": "Honda",
+            "model": "Civic",
+            "trim": "EX",
+            "makeRef": "make:honda",
+            "modelRef": "model:honda/civic",
+            "nano": "2HGFC2F7*MH",
+            "media": []
+          },
+          {
+            "id": "53c37544-7a5b-4221-a156-63924e357e63",
+            "vin": "2HGFC2F52LH002463",
+            "price": 21999,
+            "currency": "CAD",
+            "odometer": 100000,
+            "year": 2020,
+            "make": "Honda",
+            "model": "Civic Sedan",
+            "trim": "LX",
+            "makeRef": "make:honda",
+            "modelRef": "model:honda/civic",
+            "nano": "2HGFC2F5*LH",
+            "media": []
+          },
+          {
+            "id": "19a2e269-e76d-4fe9-87f1-cce4a287dc87",
+            "vin": "2HGFC2E5XLH004964",
+            "price": 21990,
+            "currency": "CAD",
+            "odometer": 63817,
+            "year": 2020,
+            "make": "Honda",
+            "model": "Civic",
+            "trim": "LX",
+            "makeRef": "make:honda",
+            "modelRef": "model:honda/civic",
+            "nano": "2HGFC2E5*LH",
+            "media": []
+          },
+          {
+            "id": "eade10f0-a2e1-4379-9e82-65e104d6c308",
+            "vin": "2HGFC2F72LH033567",
+            "price": 21995,
+            "currency": "CAD",
+            "odometer": 100549,
+            "year": 2020,
+            "make": "Honda",
+            "model": "Civic",
+            "trim": "EX",
+            "makeRef": "make:honda",
+            "modelRef": "model:honda/civic",
+            "nano": "2HGFC2F7*LH",
+            "media": []
+          },
+          {
+            "id": "0cccae0b-9f2b-44b2-aff3-777be74197c4",
+            "vin": "2HGFE2F25NH118887",
+            "price": 23590,
+            "currency": "CAD",
+            "odometer": 49576,
+            "year": 2022,
+            "make": "Honda",
+            "model": "Civic",
+            "trim": "LX",
+            "makeRef": "make:honda",
+            "modelRef": "model:honda/civic",
+            "nano": "2HGFE2F2*NH",
+            "media": []
+          },
+          {
+            "id": "9cfb1d32-1210-4089-8155-e5c682b1e135",
+            "vin": "2HGFC3B93LH450029",
+            "price": 20800,
+            "currency": "CAD",
+            "odometer": 93054,
+            "year": 2020,
+            "make": "Honda",
+            "model": "Civic",
+            "trim": "Touring",
+            "makeRef": "make:honda",
+            "modelRef": "model:honda/civic",
+            "nano": "2HGFC3B9*LH",
+            "media": []
+          },
+          {
+            "id": "6386ab6f-4cdb-431e-84c8-e7d3b3072194",
+            "vin": "2HGFC1F90LH103207",
+            "price": 15990,
+            "currency": "CAD",
+            "odometer": 91000,
+            "year": 2020,
+            "make": "Honda",
+            "model": "Civic",
+            "trim": "Touring",
+            "makeRef": "make:honda",
+            "modelRef": "model:honda/civic",
+            "nano": "2HGFC1F9*LH",
+            "media": []
+          },
+          {
+            "id": "130768e4-a9d8-4cbf-9fd3-59209890937f",
+            "vin": "2HGFE1F90NH006313",
+            "price": 25590,
+            "currency": "CAD",
+            "odometer": 50963,
+            "year": 2022,
+            "make": "Honda",
+            "model": "Civic",
+            "trim": "Touring",
+            "makeRef": "make:honda",
+            "modelRef": "model:honda/civic",
+            "nano": "2HGFE1F9*NH",
+            "media": []
+          },
+          {
+            "id": "04f0cae7-cd61-4a04-a85e-18964495eb87",
+            "vin": "SHHFK7H94LU302122",
+            "price": 26711,
+            "currency": "CAD",
+            "odometer": 57512,
+            "year": 2020,
+            "make": "Honda",
+            "model": "Civic Hatchback",
+            "trim": "Sport Touring",
+            "makeRef": "make:honda",
+            "modelRef": "model:honda/civic",
+            "nano": "SHHFK7H9*LU",
+            "media": []
+          },
+          {
+            "id": "283bc80a-6944-479c-9ee0-c4e51222bbb6",
+            "vin": "19XFL1H8XNE402530",
+            "price": 28990,
+            "currency": "CAD",
+            "odometer": 42325,
+            "year": 2022,
+            "make": "Honda",
+            "model": "Civic",
+            "trim": "Sport Touring",
+            "makeRef": "make:honda",
+            "modelRef": "model:honda/civic",
+            "nano": "19XFL1H8*NE",
+            "media": []
+          }
+        ],
+        "pagination": {
+          "page": 1,
+          "limit": 12
+        },
+        "filters": {
+          "models": [
+            "model:honda/civic"
+          ],
+          "year": {
+            "min": 2020,
+            "max": 2022
+          },
+          "odometer": {
+            "min": 40000,
+            "max": 130000
+          }
+        }
+      }
+    },
+    "sticker": {
+      "ok": true,
+      "ms": 96,
+      "provenance": "read through the Cardog MCP server (same API) on 2026-10-16",
+      "response": {
+        "vin": "2HGFC2F51MH015612",
+        "label": null,
+        "unavailable": {
+          "reason": "no_lane",
+          "issuer": null,
+          "detail": "We do not collect window stickers for this manufacturer."
+        }
+      }
+    },
+    "recalls": {
+      "ok": true,
+      "ms": 173,
+      "provenance": "recorded via the Cardog MCP server (same API), list trimmed to Transport Canada campaigns",
+      "response": {
+        "ref": "model-year:honda/civic/2021",
+        "total": 9,
+        "recalls": [
+          {
+            "ref": "recall:tc/2026251",
+            "authority": "tc",
+            "authorityLabel": "Transport Canada",
+            "campaignNumber": "2026251",
+            "component": "Seats And Restraints",
+            "defectSummary": "On certain vehicles, the weight sensor for the front passenger seat may not have been manufactured properly. As a result, the passenger-front airbag and knee airbag could deploy in a crash that doesn't require them to.",
+            "consequenceSummary": null,
+            "correctiveAction": null,
+            "recallDate": "2026-05-21",
+            "notificationType": "Safety Mfr",
+            "unitsAffected": 12371,
+            "affects": [
+              {
+                "modelYearRef": "model-year:honda/civic/2021",
+                "year": 2021,
+                "unitsAffected": 12371
+              }
+            ],
+            "links": {
+              "self": "/v2/recalls/recall%3Atc%2F2026251"
+            }
+          },
+          {
+            "ref": "recall:tc/2024059",
+            "authority": "tc",
+            "authorityLabel": "Transport Canada",
+            "campaignNumber": "2024059",
+            "component": "Airbag",
+            "defectSummary": "On certain vehicles, the weight sensor for the front passenger seat may not have been manufactured properly. As a result, the passenger-front airbag and knee airbag could deploy in a crash that doesn't require them to.",
+            "consequenceSummary": null,
+            "correctiveAction": null,
+            "recallDate": "2024-02-01",
+            "notificationType": "Safety Mfr",
+            "unitsAffected": 66846,
+            "affects": [
+              {
+                "modelYearRef": "model-year:honda/civic/2021",
+                "year": 2021,
+                "unitsAffected": 66846
+              }
+            ],
+            "links": {
+              "self": "/v2/recalls/recall%3Atc%2F2024059"
+            }
+          },
+          {
+            "ref": "recall:tc/2023365",
+            "authority": "tc",
+            "authorityLabel": "Transport Canada",
+            "campaignNumber": "2023365",
+            "component": "Brakes",
+            "defectSummary": "On certain vehicles, the brake master cylinder could separate from the brake booster. If this happens, braking could be reduced or you could experience a complete loss of brakes.",
+            "consequenceSummary": null,
+            "correctiveAction": null,
+            "recallDate": "2023-06-29",
+            "notificationType": "Safety Mfr",
+            "unitsAffected": 12246,
+            "affects": [
+              {
+                "modelYearRef": "model-year:honda/civic/2021",
+                "year": 2021,
+                "unitsAffected": 12246
+              }
+            ],
+            "links": {
+              "self": "/v2/recalls/recall%3Atc%2F2023365"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

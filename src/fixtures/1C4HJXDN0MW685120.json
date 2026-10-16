@@ -1,0 +1,401 @@
+{
+  "vin": "1C4HJXDN0MW685120",
+  "recordedAt": "2026-10-16T17:40:00.000Z",
+  "sdk": "@cardog/api@2.2.0",
+  "calls": {
+    "decode": {
+      "ok": true,
+      "ms": 231,
+      "provenance": "read through the Cardog MCP server (same API) on 2026-10-16 (identify_vehicle); decoded attributes are not in the MCP card",
+      "response": {
+        "vin": "1C4HJXDN0MW685120",
+        "valid": true,
+        "year": 2021,
+        "make": "Jeep",
+        "model": "Wrangler",
+        "trim": "Unlimited Sport",
+        "refs": {
+          "make": "make:jeep",
+          "model": "model:jeep/wrangler",
+          "modelYear": "model-year:jeep/wrangler/2021",
+          "bodyStyle": "body-style:sport-utility-vehicle-suv-multi-purpose-vehicle-mpv",
+          "fuelType": "fuel-type:gasoline",
+          "driveType": "drive-type:4wd-4-wheel-drive-4x4",
+          "transmission": null,
+          "electrificationLevel": null,
+          "vehicleType": "vehicle-type:multipurpose-passenger-vehicle-mpv",
+          "gvwr": "gvwr:class-1d-5-001-6-000-lb-2-268-2-722-kg",
+          "country": null,
+          "bodyCab": null,
+          "bedType": null,
+          "series": null,
+          "fuelTypeSecondary": null,
+          "trailerBodyType": null,
+          "trailerType": null
+        },
+        "nano": "nano:1C4HJXDNMW",
+        "squish": "squish:1C4HJXDNM"
+      }
+    },
+    "quote": {
+      "ok": true,
+      "ms": 152,
+      "provenance": "read through the Cardog MCP server (same API) on 2026-10-16",
+      "response": {
+        "ref": "model-year:jeep/wrangler/2021",
+        "grain": "mmy",
+        "liveCount": 68,
+        "bestPrice": 19999,
+        "priceP25": 29968,
+        "priceMedian": 32959,
+        "priceP75": 36995,
+        "avgDomDays": 76,
+        "cuts30d": 12,
+        "avgCutPct30d": 3.59,
+        "sightings30d": 20939,
+        "asOf": "2026-10-16T01:01:04.149Z",
+        "links": {
+          "instrument": "/v2/instruments/model-year%3Ajeep%2Fwrangler%2F2021",
+          "history": "/v2/tape/history/model-year%3Ajeep%2Fwrangler%2F2021"
+        }
+      }
+    },
+    "comps": {
+      "ok": true,
+      "ms": 388,
+      "provenance": "read through the Cardog MCP server (same API) on 2026-10-16; the MCP search takes no location, so these are Canada-wide, and the trade-in's own listing is left out",
+      "response": {
+        "listings": [
+          {
+            "id": "e94a53ba-72a8-406f-bd78-08d73bff5191",
+            "vin": "1C4HJXEN2MW756543",
+            "price": 32999,
+            "currency": "CAD",
+            "odometer": 80931,
+            "year": 2021,
+            "make": "Jeep",
+            "model": "Wrangler",
+            "trim": "Unlimited Sahara",
+            "makeRef": "make:jeep",
+            "modelRef": "model:jeep/wrangler",
+            "nano": "1C4HJXEN*MW",
+            "media": []
+          },
+          {
+            "id": "39b827f2-c2b9-4382-9d1c-908a5f732880",
+            "vin": "1C4HJXDN7LW124248",
+            "price": 30990,
+            "currency": "CAD",
+            "odometer": 50451,
+            "year": 2020,
+            "make": "Jeep",
+            "model": "Wrangler",
+            "trim": "Unlimited Sport",
+            "makeRef": "make:jeep",
+            "modelRef": "model:jeep/wrangler",
+            "nano": "1C4HJXDN*LW",
+            "media": []
+          },
+          {
+            "id": "18966219-925a-43d1-a4ea-f1a071c5ffab",
+            "vin": "1C4HJXENXMW808677",
+            "price": 31990,
+            "currency": "CAD",
+            "odometer": 62865,
+            "year": 2021,
+            "make": "Jeep",
+            "model": "Wrangler",
+            "trim": "Unlimited Sahara",
+            "makeRef": "make:jeep",
+            "modelRef": "model:jeep/wrangler",
+            "nano": "1C4HJXEN*MW",
+            "media": []
+          },
+          {
+            "id": "b0929825-12cc-45da-a7a7-559ffda66d8d",
+            "vin": "1C4HJXAG2NW138826",
+            "price": 35999,
+            "currency": "CAD",
+            "odometer": 70560,
+            "year": 2022,
+            "make": "Jeep",
+            "model": "Wrangler",
+            "trim": "Sport S",
+            "makeRef": "make:jeep",
+            "modelRef": "model:jeep/wrangler",
+            "nano": "1C4HJXAG*NW",
+            "media": []
+          },
+          {
+            "id": "56270824-73c9-4eac-8f50-997383a44083",
+            "vin": "1C4HJXFN9MW814257",
+            "price": 37990,
+            "currency": "CAD",
+            "odometer": 58683,
+            "year": 2021,
+            "make": "Jeep",
+            "model": "Wrangler",
+            "trim": "Unlimited Rubicon",
+            "makeRef": "make:jeep",
+            "modelRef": "model:jeep/wrangler",
+            "nano": "1C4HJXFN*MW",
+            "media": []
+          },
+          {
+            "id": "e2873526-448c-40a7-bbe7-294b867beb24",
+            "vin": "1C4JJXP60MW781514",
+            "price": 35590,
+            "currency": "CAD",
+            "odometer": 46159,
+            "year": 2021,
+            "make": "Jeep",
+            "model": "Wrangler 4xe",
+            "trim": "Unlimited Sahara",
+            "makeRef": "make:jeep",
+            "modelRef": "model:jeep/wrangler",
+            "nano": "1C4JJXP6*MW",
+            "media": []
+          },
+          {
+            "id": "e84fe77e-c1d8-4337-8c89-f4ba347dd4bd",
+            "vin": "1C4HJXEG3LW151088",
+            "price": 33099,
+            "currency": "CAD",
+            "odometer": 89406,
+            "year": 2020,
+            "make": "Jeep",
+            "model": "Wrangler Unlimited",
+            "trim": "Sahara",
+            "makeRef": "make:jeep",
+            "modelRef": "model:jeep/wrangler",
+            "nano": "1C4HJXEG*LW",
+            "media": []
+          },
+          {
+            "id": "3f70ed60-2d35-4ae6-b0d0-92936f6c4df8",
+            "vin": "1C4HJXEN4LW177231",
+            "price": 31888,
+            "currency": "CAD",
+            "odometer": 92985,
+            "year": 2020,
+            "make": "Jeep",
+            "model": "Wrangler Unlimited",
+            "trim": "Sahara",
+            "makeRef": "make:jeep",
+            "modelRef": "model:jeep/wrangler",
+            "nano": "1C4HJXEN*LW",
+            "media": []
+          },
+          {
+            "id": "9bf7ed51-8223-4fe0-aeae-6f4f33b9a568",
+            "vin": "1C4HJXEN1LW177266",
+            "price": 29997,
+            "currency": "CAD",
+            "odometer": 102800,
+            "year": 2020,
+            "make": "Jeep",
+            "model": "Wrangler Unlimited",
+            "trim": "Sahara",
+            "makeRef": "make:jeep",
+            "modelRef": "model:jeep/wrangler",
+            "nano": "1C4HJXEN*LW",
+            "media": []
+          },
+          {
+            "id": "7fd571ed-0bb1-47f7-ad27-3c5713dbed38",
+            "vin": "1C4HJXENXLW103764",
+            "price": 29097,
+            "currency": "CAD",
+            "odometer": 109414,
+            "year": 2020,
+            "make": "Jeep",
+            "model": "Wrangler Unlimited",
+            "trim": "Sahara",
+            "makeRef": "make:jeep",
+            "modelRef": "model:jeep/wrangler",
+            "nano": "1C4HJXEN*LW",
+            "media": []
+          },
+          {
+            "id": "ac429e4f-10ca-49d5-8d9f-d519f748e820",
+            "vin": "1C4JJXR67NW121159",
+            "price": 40795,
+            "currency": "CAD",
+            "odometer": 39413,
+            "year": 2022,
+            "make": "Jeep",
+            "model": "Wrangler 4xe",
+            "trim": "Unlimited Rubicon",
+            "makeRef": "make:jeep",
+            "modelRef": "model:jeep/wrangler",
+            "nano": "1C4JJXR6*NW",
+            "media": []
+          }
+        ],
+        "pagination": {
+          "page": 1,
+          "limit": 12
+        },
+        "filters": {
+          "models": [
+            "model:jeep/wrangler"
+          ],
+          "year": {
+            "min": 2020,
+            "max": 2022
+          },
+          "odometer": {
+            "min": 30000,
+            "max": 110000
+          }
+        }
+      }
+    },
+    "sticker": {
+      "ok": true,
+      "ms": 204,
+      "provenance": "read through the Cardog MCP server (same API) on 2026-10-16; the signed download link lasts 24 hours, so it is not stored. Set a key for a fresh one",
+      "response": {
+        "vin": "1C4HJXDN0MW685120",
+        "label": {
+          "issuer": "stellantis",
+          "retrievedAt": "2026-09-14T09:44:05.717Z",
+          "vinVerified": false,
+          "document": {
+            "uri": "lake://oem/window-stickers/57d1eb14e84fc905de64713f04eb38f459660fe6b0ea69dfd5e1c601505aadd9",
+            "sha256": "57d1eb14e84fc905de64713f04eb38f459660fe6b0ea69dfd5e1c601505aadd9",
+            "mediaType": "application/pdf",
+            "downloadUrl": null
+          }
+        },
+        "unavailable": null
+      }
+    },
+    "recalls": {
+      "ok": true,
+      "ms": 171,
+      "provenance": "read through the Cardog MCP server (same API) on 2026-10-16, list trimmed to Transport Canada campaigns",
+      "response": {
+        "ref": "model-year:jeep/wrangler/2021",
+        "total": 30,
+        "recalls": [
+          {
+            "ref": "recall:tc/2026271",
+            "authority": "tc",
+            "authorityLabel": "Transport Canada",
+            "campaignNumber": "2026271",
+            "component": "Steering",
+            "defectSummary": "On certain vehicles, the connection for the electric hydraulic power steering pump (EHPSP) could become loose. If this happens, the EHPSP connection could overheat and melt.",
+            "consequenceSummary": null,
+            "correctiveAction": null,
+            "recallDate": "2026-06-04",
+            "notificationType": "Safety Mfr",
+            "unitsAffected": 106258,
+            "affects": [
+              {
+                "modelYearRef": "model-year:jeep/wrangler/2021",
+                "year": 2021,
+                "unitsAffected": 106258
+              }
+            ],
+            "links": {
+              "self": "/v2/recalls/recall%3Atc%2F2026271"
+            }
+          },
+          {
+            "ref": "recall:tc/2025595",
+            "authority": "tc",
+            "authorityLabel": "Transport Canada",
+            "campaignNumber": "2025595",
+            "component": "High Voltage",
+            "defectSummary": "On certain vehicles, the recall repairs completed during recall 95B (Transport Canada recall no. 2024-566) may not be effective. This recall only affects 4xe plug-in hybrid (PHEV) models.",
+            "consequenceSummary": null,
+            "correctiveAction": null,
+            "recallDate": "2025-10-30",
+            "notificationType": "Safety Mfr",
+            "unitsAffected": 20753,
+            "affects": [
+              {
+                "modelYearRef": "model-year:jeep/wrangler/2021",
+                "year": 2021,
+                "unitsAffected": 20753
+              }
+            ],
+            "links": {
+              "self": "/v2/recalls/recall%3Atc%2F2025595"
+            }
+          },
+          {
+            "ref": "recall:tc/2024566",
+            "authority": "tc",
+            "authorityLabel": "Transport Canada",
+            "campaignNumber": "2024566",
+            "component": "High Voltage",
+            "defectSummary": "On certain vehicles, the recall repairs completed during recall B9A (Transport Canada recall no. 2023-627) may not be effective. This recall only affects 4xe plug-in hybrid (PHEV) models.",
+            "consequenceSummary": null,
+            "correctiveAction": null,
+            "recallDate": "2024-09-27",
+            "notificationType": "Safety Mfr",
+            "unitsAffected": 14038,
+            "affects": [
+              {
+                "modelYearRef": "model-year:jeep/wrangler/2021",
+                "year": 2021,
+                "unitsAffected": 14038
+              }
+            ],
+            "links": {
+              "self": "/v2/recalls/recall%3Atc%2F2024566"
+            }
+          },
+          {
+            "ref": "recall:tc/2024098",
+            "authority": "tc",
+            "authorityLabel": "Transport Canada",
+            "campaignNumber": "2024098",
+            "component": "Heater And Defroster",
+            "defectSummary": "On certain vehicles, a software problem could cause the windshield defrost system not to work properly. This recall only affects plug-in hybrid (PHEV) models.",
+            "consequenceSummary": null,
+            "correctiveAction": null,
+            "recallDate": "2024-02-15",
+            "notificationType": "Safety Mfr",
+            "unitsAffected": 16039,
+            "affects": [
+              {
+                "modelYearRef": "model-year:jeep/wrangler/2021",
+                "year": 2021,
+                "unitsAffected": 16039
+              }
+            ],
+            "links": {
+              "self": "/v2/recalls/recall%3Atc%2F2024098"
+            }
+          },
+          {
+            "ref": "recall:tc/2023627",
+            "authority": "tc",
+            "authorityLabel": "Transport Canada",
+            "campaignNumber": "2023627",
+            "component": "High Voltage",
+            "defectSummary": "On certain Wrangler 4xe plug-in hybrid electric vehicles (PHEV), there could be a problem inside the high-voltage battery that can cause a fire, even while parked with the ignition off.",
+            "consequenceSummary": null,
+            "correctiveAction": null,
+            "recallDate": "2023-11-22",
+            "notificationType": "Safety Mfr",
+            "unitsAffected": 3856,
+            "affects": [
+              {
+                "modelYearRef": "model-year:jeep/wrangler/2021",
+                "year": 2021,
+                "unitsAffected": 3856
+              }
+            ],
+            "links": {
+              "self": "/v2/recalls/recall%3Atc%2F2023627"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
