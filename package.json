@@ -1,0 +1,48 @@
+{
+  "name": "larkspur-trade-in-appraisal",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Sample app: dealer trade-in appraisal powered by the Cardog API.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.9"
+  },
+  "scripts": {
+    "dev": "pnpm db:setup && next dev -p 3022",
+    "build": "next build",
+    "start": "pnpm db:setup && next start -p 3022",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "db:setup": "tsx scripts/setup.ts",
+    "db:reset": "rm -rf data/larkspur.db data/larkspur.db-shm data/larkspur.db-wal data/photos && tsx scripts/setup.ts",
+    "record-fixtures": "node scripts/record-fixtures.mjs"
+  },
+  "dependencies": {
+    "@cardog/api": "2.2.0",
+    "better-auth": "1.7.10",
+    "better-sqlite3": "12.11.1",
+    "drizzle-orm": "0.45.4",
+    "next": "15.5.28",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^22",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "drizzle-kit": "0.31.11",
+    "postcss": "^8.5.30",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3",
+      "esbuild"
+    ]
+  }
+}

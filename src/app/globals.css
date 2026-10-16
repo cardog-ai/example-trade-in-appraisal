@@ -1,0 +1,203 @@
+@import "tailwindcss";
+
+/*
+ * Larkspur Motors: the lot, not the showroom. Poured-concrete ground, a deep
+ * spruce slab for the store, and grease-pencil yellow for the one number
+ * that matters on each screen, the way it is written on a windshield. Heavy
+ * condensed type, square corners, two-pixel rules. Built to be read at arm's
+ * length in daylight with a thumb on the screen.
+ */
+@theme {
+  --color-lot: #eceae3;
+  --color-card: #fbfaf7;
+  --color-ink: #0f1d1a;
+  --color-ink-2: #2c3a36;
+  --color-muted: #56625e;
+  --color-faint: #86908c;
+  --color-rule: #d6d2c8;
+  --color-rule-strong: #0f1d1a;
+
+  --color-spruce: #14574a;
+  --color-spruce-deep: #0c3a31;
+  --color-spruce-soft: #e9f2ef;
+  --color-spruce-line: #2a6b5e;
+  --color-pencil: #f2c230;
+  --color-flag: #b4441c;
+  --color-flag-soft: #f7e7df;
+  --color-good: #14574a;
+
+  /* The developer pane: a dark slab, tinted toward the spruce. */
+  --color-pane: #0d1715;
+  --color-pane-2: #13201d;
+  --color-pane-rule: #23332f;
+  --color-pane-text: #d5dedb;
+  --color-pane-muted: #84948f;
+  --color-pane-key: #8fd3c1;
+  --color-pane-str: #e8d27a;
+  --color-pane-num: #f2a96b;
+
+  --font-display: var(--font-barlow-condensed), "Arial Narrow", ui-sans-serif, sans-serif;
+  --font-sans: var(--font-barlow), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  background: var(--color-lot);
+  color: var(--color-ink);
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  background: var(--color-lot);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: #f2c23066;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-pencil);
+  outline-offset: 2px;
+}
+
+@layer components {
+  /* Display type: condensed, tight, uppercase only where it labels. */
+  .display {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.005em;
+    line-height: 0.95;
+  }
+  .label {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.8125rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+  }
+  .num {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* A slab: the physical card. Square, two-pixel ink edge. */
+  .slab {
+    background: var(--color-card);
+    border: 2px solid var(--color-ink);
+    border-radius: 4px;
+  }
+  .slab-quiet {
+    background: var(--color-card);
+    border: 1px solid var(--color-rule);
+    border-radius: 4px;
+  }
+
+  .field {
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 4px;
+    border: 2px solid var(--color-ink);
+    background: var(--color-card);
+    padding: 0 1rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--color-ink);
+  }
+  .field:focus {
+    outline: 3px solid var(--color-pencil);
+    outline-offset: 0;
+  }
+  .field::placeholder {
+    color: var(--color-faint);
+    font-weight: 400;
+  }
+  .field:disabled {
+    border-color: var(--color-rule);
+    color: var(--color-faint);
+    background: transparent;
+  }
+  .field-vin {
+    font-family: var(--font-mono);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 3.5rem;
+    padding: 0 1.5rem;
+    border-radius: 4px;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: background-color 100ms, color 100ms, transform 60ms;
+  }
+  .btn:active:not(:disabled) {
+    transform: translateY(1px);
+  }
+  .btn-go {
+    background: var(--color-spruce);
+    color: #fff;
+  }
+  .btn-go:hover {
+    background: var(--color-spruce-deep);
+  }
+  .btn-go:disabled {
+    background: var(--color-rule);
+    color: var(--color-card);
+    cursor: not-allowed;
+  }
+  .btn-pencil {
+    background: var(--color-pencil);
+    color: var(--color-ink);
+  }
+  .btn-pencil:hover {
+    background: #e5b31f;
+  }
+  .btn-line {
+    border: 2px solid var(--color-ink);
+    color: var(--color-ink);
+    background: transparent;
+  }
+  .btn-line:hover {
+    background: var(--color-card);
+  }
+  .btn-sm {
+    height: 2.75rem;
+    font-size: 1.0625rem;
+    padding: 0 1rem;
+  }
+  .link {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--color-rule);
+    text-underline-offset: 4px;
+  }
+  .link:hover {
+    text-decoration-color: var(--color-ink);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
