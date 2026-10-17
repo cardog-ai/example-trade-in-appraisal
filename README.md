@@ -156,6 +156,28 @@ pnpm db:setup      # apply migrations; seed if empty
 pnpm db:reset      # delete the database and photos and start again
 ```
 
+## Auth secret
+
+better-auth signs sessions with `BETTER_AUTH_SECRET`.
+
+- `pnpm dev` with no `.env.local`, and any `pnpm build`, fall back to a
+  development secret, so a fresh clone runs and builds.
+- `.env.example` sets that same development placeholder, clearly named. With
+  it, `pnpm build && pnpm start` works locally and warns on every start.
+- A production server (`pnpm start`) with no secret set refuses to start.
+
+Before deploying, replace it: `openssl rand -base64 32`.
+
+## Production build locally
+
+```bash
+cp .env.example .env.local
+pnpm install
+pnpm db:setup
+pnpm build
+pnpm start          # http://localhost:3022
+```
+
 ## Deploy
 
 The app needs a Node server and a disk for SQLite and photos. The
